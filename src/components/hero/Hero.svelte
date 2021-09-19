@@ -1,6 +1,4 @@
 <script>
-//  import HeroStandar from "./HeroStandar.svelte";
-//  import HeroCat from "./HeroCat.svelte";
  import Cat from "./Cat.svelte"
 </script>
 

@@ -19,7 +19,6 @@
         // var ojos = gsap.timeline({repeat:-1, repeatDelay: 4});
         //     ojos.to("#ojoIzq", {})
 
-    // repeat:-1, repeatDelay: 3,
 </script>
 
 
