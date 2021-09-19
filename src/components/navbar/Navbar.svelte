@@ -4,7 +4,7 @@ import Menu from './BurgerMenu.svelte';
 import { get } from 'svelte/store'
 import { linksItems } from '../../routes/store'
 import MediaQuery from "../../tools/MediaQuery.svelte";
-
+import Logo from "./Logo.svelte"
 
 let open;
 let links = get(linksItems)
@@ -17,13 +17,14 @@ let links = get(linksItems)
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/svelte-hamburgers@3/dist/css/types/spin.css" />
 </svelte:head>
 
-<div class="navbar mb-2 shadow-lg bg-neutral text-neutral-content">
+<div class="navbar shadow-lg bg-pink text-neutral-content">
 
   <!-- LOGO -->
-  <div class="flex-1 px-2 mx-2">
-    <span class="text-lg font-bold">
+  <div class="flex-1">
+    <Logo />
+    <!-- <span class="text-lg font-bold">
             Web Card
-          </span>
+          </span> -->
   </div> 
 
   <!-- LINKS -->
@@ -56,7 +57,9 @@ let links = get(linksItems)
 </div>
 
 <style>
-
+.bg-pink{
+  background-color: #f498c1;
+}
 
 </style>
 

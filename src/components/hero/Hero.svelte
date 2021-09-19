@@ -1,10 +1,15 @@
 <script>
 //  import HeroStandar from "./HeroStandar.svelte";
 //  import HeroCat from "./HeroCat.svelte";
- import Cat from "./cat.svelte"
+ import Cat from "./Cat.svelte"
 </script>
 
+
+
+
 <!-- <HeroCat /> -->
+
+
 <section class="text-gray-600 body-font">
   <div class="container mx-auto flex px-5 md:flex-row flex-col items-center">
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">

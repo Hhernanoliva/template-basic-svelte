@@ -45,17 +45,17 @@
 	let burbujaChiquita2 = () => {
 		let bbG = gsap.timeline({repeat:-1})
 		bbG.to("#bbMchica2", attBBchiquita2.bb)
-		bbG.to("#bbMchica2", attBBchiquita2.bbOpacity, "2.25")
+		bbG.to("#bbMchica2", attBBchiquita2.bbOpacity, "2.15")
 		bbG.to("#sombraMchica2", attBBchiquita2.sombraV, "0")
-		bbG.to("#sombraMchica2", attBBchiquita2.bbOpacity, "2.23")
+		bbG.to("#sombraMchica2", attBBchiquita2.bbOpacity, "2.137")
 		return bbG
 	}
 	let burbujaChiquita = () => {
 		let bbG = gsap.timeline({repeat:-1})
 		bbG.to("#bbMchica", attBBchiquita.bb)
-		bbG.to("#bbMchica", attBBchiquita.bbOpacity, "5.24")
+		bbG.to("#bbMchica", attBBchiquita.bbOpacity, "5.13")
 		bbG.to("#sombraMchica", attBBchiquita.sombraV, "0")
-		bbG.to("#sombraMchica", attBBchiquita.bbOpacity, "5.22")
+		bbG.to("#sombraMchica", attBBchiquita.bbOpacity, "5.116")
 		return bbG
 	}
 
