@@ -1,5 +1,5 @@
 <script>
- import Cat from "Cat.svelte"
+ import Cat from "./Cat.svelte"
 </script>
 
 
