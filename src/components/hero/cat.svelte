@@ -67,13 +67,6 @@
 		master.add(burbujaGrande(),
 		burbujaMediana(), burbujaChiquita2(), burbujaChiquita())
 
-
-	// 	let burbujaGrande = gsap.timeline( {repeat:-1, delay: "random(0, 2)"} );
-	
-	// 	burbujaGrande.to("#burbujaG", attBBgrande.bb)
-	// 	burbujaGrande.to("#burbujaG", attBBgrande.bbOpacity, "7.8")
-	// 	burbujaGrande.to("#sombraG", attBBgrande.sombraV, "0")
-	// 	burbujaGrande.to("#sombraG", attBBgrande.bbOpacity, "6.6")
 	});
 
 
