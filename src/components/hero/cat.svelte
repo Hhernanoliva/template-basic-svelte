@@ -1,8 +1,6 @@
 <script>
 	import { gsap } from "gsap";
 	import { onMount } from "svelte";
-
-
 	let attBBgrande = {
 		bb: {duration: 7, y: -70, ease: 'Circ.easeIn', delay: "aleatorio()"},
 		bbOpacity: {duration: 0.7, opacity: 0},
@@ -23,9 +21,7 @@
 		bbOpacity: {duration: 0.7, opacity: 0},
 		sombraV: {duration: 5.48, y: -80, ease: 'Circ.easeIn'}
 	};
-
 	
-
 	let burbujaGrande = () => {
 		let bbG = gsap.timeline({repeat:-1})
 		bbG.to("#bbG", attBBgrande.bb)
@@ -45,31 +41,25 @@
 	let burbujaChiquita2 = () => {
 		let bbG = gsap.timeline({repeat:-1})
 		bbG.to("#bbMchica2", attBBchiquita2.bb)
-		bbG.to("#bbMchica2", attBBchiquita2.bbOpacity, "2.15")
+		bbG.to("#bbMchica2", attBBchiquita2.bbOpacity, "2.25")
 		bbG.to("#sombraMchica2", attBBchiquita2.sombraV, "0")
-		bbG.to("#sombraMchica2", attBBchiquita2.bbOpacity, "2.137")
+		bbG.to("#sombraMchica2", attBBchiquita2.bbOpacity, "2.23")
 		return bbG
 	}
 	let burbujaChiquita = () => {
 		let bbG = gsap.timeline({repeat:-1})
 		bbG.to("#bbMchica", attBBchiquita.bb)
-		bbG.to("#bbMchica", attBBchiquita.bbOpacity, "5.13")
+		bbG.to("#bbMchica", attBBchiquita.bbOpacity, "5.24")
 		bbG.to("#sombraMchica", attBBchiquita.sombraV, "0")
-		bbG.to("#sombraMchica", attBBchiquita.bbOpacity, "5.116")
+		bbG.to("#sombraMchica", attBBchiquita.bbOpacity, "5.22")
 		return bbG
 	}
-
-
-
 	onMount(() => {
-
 		let master = gsap.timeline();
 		master.add(burbujaGrande(),
 		burbujaMediana(), burbujaChiquita2(), burbujaChiquita())
 
 	});
-
-
 </script>
 
 <svg width="537" height="325" viewBox="0 0 537 325" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1588,4 +1578,3 @@
 	</clipPath>
 	</defs>
 	</svg>
-	
