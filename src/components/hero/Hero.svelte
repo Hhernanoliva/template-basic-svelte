@@ -1,5 +1,5 @@
 <script>
- import Cat from "./Cat"
+ import Cat from "./cat"
 </script>
 
 <!-- <HeroCat /> -->
