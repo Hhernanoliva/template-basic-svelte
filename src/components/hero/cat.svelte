@@ -1,6 +1,7 @@
 <script>
 	import { gsap } from "gsap";
 	import { onMount } from "svelte";
+	
 	let attBBgrande = {
 		bb: {duration: 7, y: -70, ease: 'Circ.easeIn', delay: "aleatorio()"},
 		bbOpacity: {duration: 0.7, opacity: 0},
