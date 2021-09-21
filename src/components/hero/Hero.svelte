@@ -4,8 +4,8 @@
 
 <!-- <HeroCat /> -->
 <section class="text-gray-600 body-font bg-color text-white">
-  <div class="container mx-auto flex md:px-5 md:flex-row flex-col items-center justify-center">
-    <div class="cat w-full px-10 sm:max-w-lg">
+  <div class="container mx-auto flex md:px-5 md:flex-row pt-10 flex-col items-center justify-center">
+    <div class="cat w-full px-3 sm:max-w-lg">
       <Cat/>
     </div>
     <!-- <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
