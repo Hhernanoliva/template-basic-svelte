@@ -4,7 +4,7 @@
 
 <!-- <HeroCat /> -->
 <section class="text-gray-600 body-font bg-color text-white">
-  <div class="container mx-auto flex px-5 md:flex-row flex-col items-center">
+  <div class="container mx-auto flex px-5 md:flex-row flex-col items-center justify-center">
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
       <div class="cat">
         <Cat/>

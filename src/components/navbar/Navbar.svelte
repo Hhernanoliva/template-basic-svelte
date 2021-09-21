@@ -13,6 +13,7 @@ onMount(() => {
         var tl = gsap.timeline({delay: 4.5});
             tl.to("#viewscreen", {duration: 2.2, ease: "Power3.easeIn", height: "0"});
             tl.to("#viewscreen", {duration: 2, opacity: 0}, "-=0.4");
+            tl.to("#viewscreen", {display: "none"});
     })
 
 
@@ -40,7 +41,7 @@ let links = get(linksItems)
   </div>
   
   <!-- LINKS -->
-  <div class="flex-none hidden px-2 mx-2 md:flex">
+  <div class="flex-none hidden px-2 mx-2">
     
     <!-- <div class="flex items-stretch">
       {#each links as item}
@@ -51,10 +52,10 @@ let links = get(linksItems)
   </div> 
 
  
-  <!-- HAMBURGUESA -->
-  <!-- <MediaQuery query="(max-width: 768px)" let:matches>
+  <!-- HAMBURGUESA --> 
+  <MediaQuery query="(max-width: 768px)" let:matches>
     {#if matches}
-    <div class="containerBurger">
+    <div class="containerBurger absolute">
       <Hamburger
       bind:open
       --color="white"
@@ -63,7 +64,7 @@ let links = get(linksItems)
     </div>
       <Menu bind:open />
     {/if} 
-  </MediaQuery> -->
+  </MediaQuery>
 
    
  
@@ -87,10 +88,9 @@ let links = get(linksItems)
     }
 
   .containerBurger{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
     margin: 0 15px 0 0;
+    right: 0;
+    
   }
   .bg-pink{
   background-color: #f498c1;

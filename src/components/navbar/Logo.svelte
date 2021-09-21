@@ -16,6 +16,7 @@
             tl.from("#cat", {opacity: 0, y: 40, duration: 1.2, ease: "Elastic.easeOut.config(1, 0.3), y: -100"}, "3");
             tl.to("#logo", {duration: 2.5, ease: "Power3.easeIn", transform: "translateY(-1000px)"})
             tl.to("#logo", {duration: 0.3, opacity: 0}, "-=1.1");
+            tl.to("#logo", {display: "none"});
     })
         // var ojos = gsap.timeline({repeat:-1, repeatDelay: 4});
         //     
