@@ -1,4 +1,4 @@
-<svg width="311" height="45" viewBox="0 0 311 45" fill="none" xmlns="http://www.w3.org/2000/svg" class="sm:w-22">
+<svg width="245" height="45" viewBox="0 0 311 45" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="Group 1">
     <g id="cat">
     <g id="body">

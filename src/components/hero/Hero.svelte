@@ -4,11 +4,9 @@
 
 <!-- <HeroCat /> -->
 <section class="text-gray-600 body-font bg-color text-white">
-  <div class="container mx-auto flex px-5 md:flex-row flex-col items-center justify-center">
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-      <div class="cat">
-        <Cat/>
-      </div>
+  <div class="container mx-auto flex md:px-5 md:flex-row flex-col items-center justify-center">
+    <div class="cat w-full px-10 sm:max-w-lg">
+      <Cat/>
     </div>
     <!-- <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium">Before they sold out
@@ -29,8 +27,6 @@
     display: flex;
     justify-content: center;
     background-color: #F498C1;
-    width:  100%;
-    height: 100%;
 }
 
 .bg-color{

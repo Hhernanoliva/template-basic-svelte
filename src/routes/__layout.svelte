@@ -5,3 +5,9 @@ import Navbar from '../components/navbar/Navbar.svelte'
 
 <Navbar/>
 <slot></slot>
+
+<style lang="scss">
+    body{
+        background-color: #f498c1;
+    }
+</style>

@@ -35,8 +35,8 @@ let links = get(linksItems)
     <Logo />
   </div> 
 
-<div class="navbar shadow-lg bg-pink text-neutral-content md:flex flex justify-center" id="conteinerLogo">
-  <div class=" justify-center">
+<div class="navbar shadow-lg bg-pink text-neutral-content flex justify-center " id="conteinerLogo">
+  <div class="justify-center w-40 sm:w-max">
     <LogoStatic />
   </div>
   
@@ -55,7 +55,7 @@ let links = get(linksItems)
   <!-- HAMBURGUESA --> 
   <MediaQuery query="(max-width: 768px)" let:matches>
     {#if matches}
-    <div class="containerBurger absolute">
+    <div class="containerBurger absolute bg-pink">
       <Hamburger
       bind:open
       --color="white"
