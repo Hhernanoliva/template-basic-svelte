@@ -9,9 +9,11 @@ export let open;
 </script>
 
 {#if open}
-    <div class="flex-col md:flex">
+    <div class="screenSmoke"></div>
+    <div class="flex-col md:flex text-2xl">
+        
         {#each links as link, i}
-                <a transition:fly={{ y: -205, delay: 50 * i }} href="{link.url}" class="btn btn-ghost btn-sm rounded-btn">{link.name}</a> 
+            <a transition:fly={{ y: -205, delay: 50 * i }} href="{link.url}" class="text-2xl py-1">{link.name}</a> 
         {/each}
         <hr transition:scale={{ duration: 750, easing: quadOut, opacity: 1 }} />
     </div>
@@ -20,30 +22,42 @@ export let open;
 <style>
     div {
         position: absolute;
-        background-color: #3d4451;
         left: 0;
-        top: 68px;
+        top: 70px;
         width: 100%;
-        height: 100%;
+        height: calc(100vh - 70px);
         text-align: center;
         font-size: 1.5em;
         letter-spacing: 0.15em;
-        padding: 1em;
-        padding-top: 0;
-        color: #eef;
+        padding-top: 1em;
+        color: #ffffff;
+        z-index: 3;
+    }
+    a{
+        font-weight: 300;
+    }
+    .screenSmoke{
+        position: absolute;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        height: calc(300px - 70px);
+        filter: blur(10rem);
+        transition: all 1.5s ease;
     }
     hr{
         margin-top: 20px;
         height: 1px;
-        background-color: aliceblue;
+        background-color: rgb(255, 255, 255);
         width: 100%;
     }
-    p {
+    /* p {
         cursor: pointer;
         width: max-content;
         margin: 1rem auto;
+        padding: 10px;
     }
     p:hover {
         text-decoration: underline;
-    }
+    } */
 </style>

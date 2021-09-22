@@ -35,7 +35,7 @@ let links = get(linksItems)
     <Logo />
   </div> 
 
-<div class="navbar shadow-lg bg-pink text-neutral-content flex justify-center " id="conteinerLogo">
+<div class="navbar bg-pink text-neutral-content flex justify-center " id="conteinerLogo">
   <div class="justify-center w-40 sm:w-max">
     <LogoStatic />
   </div>
@@ -60,7 +60,7 @@ let links = get(linksItems)
       bind:open
       --color="white"
       --layer-width="20px"
-      --layer-height="1.5px" />
+      --layer-height="1px" />
     </div>
       <Menu bind:open />
     {/if} 
@@ -89,13 +89,15 @@ let links = get(linksItems)
 
   .containerBurger{
     margin: 0 15px 0 0;
-    right: 0;
-    
+    right: 0;    
   }
   .bg-pink{
   background-color: #f498c1;
 }
-
+  :global(.hamburger-box){
+    width: var(--layer-width, 27px) !important;
+    height: calc(var(--layer-height, 3.8px) * 3 + var(--layer-spacing, 5.6px) * 2) !important;
+}
 </style>
 
 
